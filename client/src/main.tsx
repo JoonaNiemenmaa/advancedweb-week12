@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")!).render(
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<SubmitBook></SubmitBook>}></Route>
-				<Route path="/:name" element={<Book></Book>}></Route>
+				<Route path="/book/:name" element={<Book></Book>}></Route>
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>,
