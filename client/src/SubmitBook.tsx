@@ -1,6 +1,6 @@
-import "./App.css";
+import "./SubmitBook.css";
 
-function App() {
+function SubmitBook() {
 	return (
 		<>
 			<h1>books</h1>
@@ -46,4 +46,4 @@ function App() {
 	);
 }
 
-export default App;
+export default SubmitBook;
