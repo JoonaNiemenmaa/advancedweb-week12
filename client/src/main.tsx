@@ -9,8 +9,16 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<SubmitBook></SubmitBook>}></Route>
+				<Route index element={<SubmitBook></SubmitBook>}></Route>
 				<Route path="/book/:name" element={<Book></Book>}></Route>
+				<Route
+					path="/*"
+					element={
+						<h1>
+							404: This is not the webpage you are looking for
+						</h1>
+					}
+				></Route>
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>,
