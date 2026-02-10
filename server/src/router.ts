@@ -21,4 +21,13 @@ router.post("/api/book/", (request: Request, response: Response) => {
 	}
 });
 
+router.get("/api/book/:name", async (request: Request, response: Response) => {
+	const book = await Book.findOne({ name: request.params.name });
+	if (book) {
+		return response.status(200).json(book);
+	} else {
+		return response.status(404).send("unsuccessful");
+	}
+});
+
 export default router;
